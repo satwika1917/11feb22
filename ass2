@@ -1,0 +1,29 @@
+student_no = int(input("enter student_NO   "))
+student_name = input("enter student name   ")
+
+no_of_subjects = 6
+sub_1 = int(input("marks of subject_1   "))
+sub_2 = int(input("marks of subject_2   "))
+sub_3 = int(input("marks of subject_3   "))
+sub_4 = int(input("marks of subject_4   "))
+sub_5 = int(input("marks of subject_5    "))
+sub_6 = int(input("marks of subject_6    "))
+
+sum = sub_1+sub_2+sub_3+sub_4+sub_5+sub_6
+avg = sum//6
+print(sum)
+print(f"avg is {avg}")
+if avg > 91:
+    print("Grade O")
+elif avg > 81:
+    print("Grade A")
+elif avg > 71:
+    print("Grade B")
+elif avg > 61:
+    print("Grade C")
+elif avg > 51:
+    print("Grade D")
+elif avg < 35:
+    print("FAIL")
+else:
+    print("Grade E")
